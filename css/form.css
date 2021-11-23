@@ -1,0 +1,155 @@
+@font-face {
+  font-family: 'M PLUS 1';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/m-plus-1-v1-latin-regular.eot');
+  src: url('../fonts/m-plus-1-v1-latin-regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/m-plus-1-v1-latin-regular.woff2') format('woff2'),
+       url('../fonts/m-plus-1-v1-latin-regular.woff') format('woff'), 
+       url('../fonts/m-plus-1-v1-latin-regular.ttf') format('truetype'),
+       url('../fonts/m-plus-1-v1-latin-regular.svg#MPLUS1') format('svg'); 
+}
+
+:root {
+  font-size: 10px;
+  --button-size: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  font-size: 1.6em;
+  font-family: 'M PLUS 1';
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  :root {
+    --button-size: 1;
+  }
+  body {
+    font-size: 1.4em;
+  }
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: linear-gradient(
+      115deg,
+      rgba(113, 113, 191, 0.6),
+      rgba(158, 58, 148, 0.7)
+    ),
+    url(../assets/kona.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+header {
+  text-align: center;
+  padding: 1em;
+}
+
+header h1 {
+  font-weight: normal;
+  margin-bottom: -15px;
+}
+
+header p {
+  font-weight: normal;
+  font-style: italic;
+  opacity: 0.7;
+}
+
+form {
+  border-radius: 5px;
+  max-width: 700px;
+  margin: auto;
+  background-color: transparent;
+  background: rgba(81, 45, 110, 0.5);
+  padding: 1em;
+}
+
+.form-control {
+  padding-left: 0.7em;
+  width: 100%;
+  color: gray;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  transition: box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  outline: 0;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem pink;
+}
+
+span {
+  font-size: 0.9em;
+  opacity: 0.9;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8em;
+}
+
+div button {
+  background: pink;
+  color: hsla(0, 0, 0, 0.5);
+}
+
+div button:hover {
+  animation-name: colorful;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes colorful {
+  100% {
+    background: lightgreen;
+  }
+}
+
+div label,
+div p {
+  margin: 0 0 10px;
+}
+
+.div-block {
+  display: block;
+}
+
+div input,
+div select,
+div textarea,
+div button {
+  border: 0;
+  border-radius: 4px;
+  padding: 0.4em;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+div textarea {
+  height: 5em;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+  transform: scale(var(--button-size));
+  margin-right: 0.3em;
+}

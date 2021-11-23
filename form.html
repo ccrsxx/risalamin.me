@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>ccrsxx's Survey Form</title>
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="icon" type="img/png" href="assets/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Risal Survey Form</h1>
+      <p id="description">Thank you for taking time to complete my survey</p>
+    </header>
+    <form id="survey-form">
+      <div>
+        <label id="name-label" for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div>
+        <label id="email-label" for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email-label"
+          class="form-control"
+          placeholder="Enter your Email"
+          required
+        />
+      </div>
+      <div>
+        <label id="number-label" for="number"
+          >Age <span> (optional) </span></label
+        >
+        <input
+          type="number"
+          name="email"
+          id="number-label"
+          class="form-control"
+          placeholder="Age"
+          min="10"
+          max="100"
+        />
+      </div>
+      <div>
+        <label for="personality-label">What kind of person are you?</label>
+        <select
+          name="personality"
+          id="personality-label"
+          class="form-control"
+          required
+        >
+          <option value="" selected disabled>Select type here</option>
+          <option value="weeb">Weeb</option>
+          <option value="normie">Normie</option>
+          <option value="extrovert">Extrovert</option>
+          <option value="introvert">Introvert</option>
+          <option value="preferNo">Prefer not to say</option>
+        </select>
+      </div>
+      <div class="div-block">
+        <p>
+          Would you want to get isakai'd
+          <span class="info-text">(going to another world)</span>?
+        </p>
+        <input id="definitely" type="radio" name="isekai" required />
+        <label for="definitely">Definitely</label><br />
+        <input id="maybe" type="radio" name="isekai" />
+        <label for="maybe">Maybe</label><br />
+        <input id="not-sure" type="radio" name="isekai" />
+        <label for="not-sure">Not sure</label><br />
+      </div>
+      <div>
+        <label for="power-label"
+          >Which power would you want to bring there?</label
+        >
+        <select name="power" id="power-label" class="form-control" required>
+          <option value="" selected disabled>Select power</option>
+          <option value="rbd">Return by death <span>(Re: Zero)</span></option>
+          <option value="base">
+            Increase base level <span>(Mushoku Tensei)</span>
+          </option>
+          <option value="overpowered">
+            Overpowered Trash <span>(Sword Art Online)</span>
+          </option>
+          <option value="titan">
+            Titan power <span>(Attack on Titan)</span>
+          </option>
+        </select>
+      </div>
+      <div class="div-block">
+        <p>
+          Which of these isekai anime you've watched?
+          <span>(Check all that apply)</span>
+        </p>
+        <input id="rezero" type="checkbox" name="feedback" />
+        <label for="rezero">Re: Zero - Starting Life in Another World</label><br />
+        <input id="sao" type="checkbox" name="feedback" />
+        <label for="sao">Sword Art Online</label><br />
+        <input id="no-game-no-life" type="checkbox" name="feedback" />
+        <label for="no-game-no-life">No Game No Life</label><br />
+        <input id="jobless-reincarnation" type="checkbox" name="feedback" />
+        <label for="jobless-reincarnation">Jobless Reincarnation</label><br />
+        <input id="shield-hero" type="checkbox" name="feedback" />
+        <label for="shield-hero">The Rising of the Shield Hero</label><br />
+        <input id="the-devil-is-a-part-timer" type="checkbox" name="feedback" />
+        <label for="the-devil-is-a-part-timer">The Devil Is A Part-Timer!</label
+        ><br />
+        <input id="konosuba" type="checkbox" name="feedback" />
+        <label for="konosuba">KonoSuba</label><br />
+      </div>
+      <div>
+        <p>Any comments or suggestions?</p>
+        <textarea
+          id="comments"
+          class="form-control"
+          name="comment"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
