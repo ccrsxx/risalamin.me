@@ -29,7 +29,7 @@
         <input
           type="email"
           name="email"
-          id="email-label"
+          id="email"
           class="form-control"
           placeholder="Enter your Email"
           required
@@ -42,7 +42,7 @@
         <input
           type="number"
           name="email"
-          id="number-label"
+          id="number"
           class="form-control"
           placeholder="Age"
           min="10"
@@ -70,18 +70,22 @@
           Would you want to get isakai'd
           <span class="info-text">(going to another world)</span>?
         </p>
-        <input id="definitely" type="radio" name="isekai" required />
+        <input
+          id="definitely"
+          type="radio"
+          name="isekai"
+          value="definitely"
+          required
+        />
         <label for="definitely">Definitely</label><br />
-        <input id="maybe" type="radio" name="isekai" />
+        <input id="maybe" type="radio" name="isekai" value="maybe" />
         <label for="maybe">Maybe</label><br />
-        <input id="not-sure" type="radio" name="isekai" />
+        <input id="not-sure" type="radio" name="isekai" value="not-sure" />
         <label for="not-sure">Not sure</label><br />
       </div>
       <div>
-        <label for="power-label"
-          >Which power would you want to bring there?</label
-        >
-        <select name="power" id="power-label" class="form-control" required>
+        <label for="power">Which power would you want to bring there?</label>
+        <select name="power" id="power" class="form-control" required>
           <option value="" selected disabled>Select power</option>
           <option value="rbd">Return by death <span>(Re: Zero)</span></option>
           <option value="base">
@@ -100,20 +104,46 @@
           Which of these isekai anime you've watched?
           <span>(Check all that apply)</span>
         </p>
-        <input id="rezero" type="checkbox" name="feedback" />
-        <label for="rezero">Re: Zero - Starting Life in Another World</label><br />
-        <input id="sao" type="checkbox" name="feedback" />
+        <input id="rezero" type="checkbox" name="feedback" value="rezero" />
+        <label for="rezero">Re: Zero - Starting Life in Another World</label
+        ><br />
+        <input id="sao" type="checkbox" name="feedback" value="sao" />
         <label for="sao">Sword Art Online</label><br />
-        <input id="no-game-no-life" type="checkbox" name="feedback" />
+        <input
+          id="no-game-no-life"
+          type="checkbox"
+          name="feedback"
+          value="no-game-no-life"
+        />
         <label for="no-game-no-life">No Game No Life</label><br />
-        <input id="jobless-reincarnation" type="checkbox" name="feedback" />
+        <input
+          id="jobless-reincarnation"
+          type="checkbox"
+          name="feedback"
+          value="jobless-reincarnation"
+        />
         <label for="jobless-reincarnation">Jobless Reincarnation</label><br />
-        <input id="shield-hero" type="checkbox" name="feedback" />
+        <input
+          id="shield-hero"
+          type="checkbox"
+          name="feedback"
+          value="shield-hero"
+        />
         <label for="shield-hero">The Rising of the Shield Hero</label><br />
-        <input id="the-devil-is-a-part-timer" type="checkbox" name="feedback" />
+        <input
+          id="the-devil-is-a-part-timer"
+          type="checkbox"
+          name="feedback"
+          value="the-devil-is-a-part-timer"
+        />
         <label for="the-devil-is-a-part-timer">The Devil Is A Part-Timer!</label
         ><br />
-        <input id="konosuba" type="checkbox" name="feedback" />
+        <input
+          id="konosuba"
+          type="checkbox"
+          name="feedback"
+          value="konosubaF"
+        />
         <label for="konosuba">KonoSuba</label><br />
       </div>
       <div>
@@ -126,7 +156,7 @@
         ></textarea>
       </div>
       <div>
-        <button type="submit">Submit</button>
+        <button id="submit" type="submit">Submit</button>
       </div>
     </form>
   </body>
