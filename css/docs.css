@@ -1,0 +1,135 @@
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/inter-v7-latin-regular.eot');
+  src: url('../fonts/inter-v7-latin-regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/inter-v7-latin-regular.woff2') format('woff2'),
+       url('../fonts/inter-v7-latin-regular.woff') format('woff'),
+       url('../fonts/inter-v7-latin-regular.ttf') format('truetype'),
+       url('../fonts/inter-v7-latin-regular.svg#Inter') format('svg');
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/fira-code-v14-latin-regular.eot');
+  src: url('../fonts/fira-code-v14-latin-regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/fira-code-v14-latin-regular.woff2') format('woff2'),
+       url('../fonts/fira-code-v14-latin-regular.woff') format('woff'),
+       url('../fonts/fira-code-v14-latin-regular.ttf') format('truetype'),
+       url('../fonts/fira-code-v14-latin-regular.svg#FiraCode') format('svg');
+}
+
+:root {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6em;
+  font-family: Inter, sans-serif;
+  line-height: 1.5;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  font-size: 1.5em;
+  text-align: left;
+  border-right: solid gray;
+  height: 100%;
+}
+
+nav header {
+  font-weight: 500;
+  margin: 0.25em 1em;
+  font-size: 1.125em;
+}
+
+nav ul {
+  height: 100%;
+  list-style-type: none;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  overflow: hidden auto;
+}
+
+nav ul li {
+  color: #4d4e53;
+  border-top: 1px solid;
+  list-style: none;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 30px;
+  color: #4d4e53;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: darkgray;
+}
+
+main {
+  margin-left: 320px;
+  font-family: unset;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 1.5em;
+  }
+
+  nav {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+  }
+
+  main {
+    margin: 300px 0 0 0;
+  }
+
+  nav header {
+    text-align: center;
+  }
+
+  nav ul {
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+  }
+}
+
+section header {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin: 0.5em 0.25em;
+}
+
+section article {
+  font-size: 1em;
+  line-height: 1.4;
+  opacity: 0.9;
+  margin: 0.25em 1em;
+}
+
+article code {
+  display: block;
+  white-space: pre-line;
+  font-weight: 100;
+  font-size: 0.8em;
+  font-family: 'Fira Code', monospace;
+  background: #f7f7f7;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 4px;
+}
+
+article ul li {
+  margin: 0.5em 0;
+}
