@@ -129,7 +129,7 @@ nav ul {
   color: white;
 }
 
-#welcome-section {
+#about {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -139,26 +139,26 @@ nav ul {
   background: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
 }
 
-#welcome-section h1 {
+#about h1 {
   font-family: Raleway;
   font-size: 6rem;
   font-weight: bold;
 }
 
 @media screen and (max-width: 480px) {
-  #welcome-section h1 {
+  #about h1 {
     font-size: 5rem;
   }
 }
 
-#welcome-section p {
+#about p {
   font-size: 3rem;
   font-weight: normal;
   font-style: italic;
   color: var(--main-red);
 }
 
-#projects {
+#project {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -170,12 +170,12 @@ nav ul {
 }
 
 @media screen and (max-width: 480px) {
-  #projects {
+  #project {
     padding: 8rem 2rem;
   }
 }
 
-#projects h2 {
+#project h2 {
   font-size: 3rem;
   text-decoration: underline;
   text-underline-position: under;
@@ -183,7 +183,7 @@ nav ul {
 }
 
 @media screen and (max-width: 480px) {
-  #projects h2 {
+  #project h2 {
     font-size: 2.5rem;
   }
 }
