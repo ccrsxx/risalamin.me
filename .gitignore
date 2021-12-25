@@ -1,2 +1,6 @@
-# vscode config
+# config
 .vscode
+fiveserver.config.js
+
+# my tests
+tests
