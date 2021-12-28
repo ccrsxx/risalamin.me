@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>ccrsxx's Tribute Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="assets/tribute.png" />
     <link rel="stylesheet" href="css/tribute.css" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <title>Tribute Page</title>
   </head>
   <body>
     <main id="main">
-      <section id="header">
+      <div class="header">
         <h1 id="title">Ir. Soekarno</h1>
-        <p>The man behind the declaration of Indonesian independence</p>
-      </section>
+        <p class="subtitle center-text">
+          The man behind the declaration of Indonesian independence
+        </p>
+      </div>
       <figure id="img-div">
-        <img id="image" src="assets/soekarno.jpg" alt="" />
-        <figcaption id="img-caption">
+        <img src="assets/soekarno.jpg" alt="" id="image" />
+        <p id="img-caption" class="center-text">
           Soekarno, accompanied by Mohammad Hatta (right), declaring the
           independence of Indonesia
-        </figcaption>
+        </p>
       </figure>
-      <section id="tribute-info">
-        <h2 id="headline">Here's a time line of Soekarno's life:</h2>
-        <ul id="timeline">
+      <div id="tribute-info">
+        <h2 class="timeline-title">Here's timeline of Soekarno's life:</h2>
+        <ul class="timeline">
           <li><strong>1901</strong> - Born in Surabaya, Indonesia.</li>
           <li>
             <strong>1916</strong> - During his school years he just went to
@@ -65,26 +72,27 @@
           <li>
             <strong>1970</strong> - dies at the age of 69 from kidney failure.
           </li>
-          <figure id="quote">
-            <blockquote>
-              I hate imperialism. I detest colonialism. And I fear the
-              consequences of their last bitter struggle for life. We are
-              determined that our nation, and the world as a whole, shall not be
-              the plaything of one small corner of the world.
-            </blockquote>
-            <figcaption>&mdash; President Soekarno</figcaption>
-          </figure>
         </ul>
-        <h2 id="headline">
-          If you have time, you should read more about him on his
-          <a
-            id="tribute-link"
-            href="https://en.wikipedia.org/wiki/Sukarno"
-            target="_blank"
-            >Wikipedia entry</a
-          >.
-        </h2>
-      </section>
+        <figure class="quote">
+          <blockquote>
+            I hate imperialism. I detest colonialism. And I fear the
+            consequences of their last bitter struggle for life. We are
+            determined that our nation, and the world as a whole, shall not be
+            the plaything of one small corner of the world.
+          </blockquote>
+          <figcaption>&mdash; President Soekarno</figcaption>
+        </figure>
+      </div>
+      <h3 class="tribute-link center-text">
+        If you have time, you should read more about him on his
+        <a
+          id="tribute-link"
+          href="https://en.wikipedia.org/wiki/Sukarno"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Wikipedia entry</a
+        >.
+      </h3>
     </main>
   </body>
 </html>
