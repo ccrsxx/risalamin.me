@@ -2,6 +2,10 @@
   --font-size: 10px;
   --font-family: Roboto, sans-serif;
   --border-radius: 8px;
+  --main-color: hsl(0, 0%, 93%);
+  --font-color: hsl(0, 0%, 30%);
+  --title-color: hsl(0, 0%, 20%);
+  --quote-color: hsl(0, 0%, 80%);
 }
 
 html {
@@ -30,13 +34,13 @@ html {
 body {
   font-size: 1.6rem;
   font-weight: 200;
+  color: var(--font-color);
 }
 
 main {
-  background: hsl(0, 0%, 93%);
+  background: var(--main-color);
   border-radius: var(--border-radius);
   margin-top: 0;
-  color: hsl(0, 0%, 30%);
 }
 
 .header {
@@ -49,7 +53,7 @@ main {
 #title {
   font-size: 3.2rem;
   margin-top: 5rem;
-  color: hsl(0, 0%, 20%);
+  color: var(--title-color);
 }
 
 .subtitle {
@@ -106,7 +110,7 @@ main {
 }
 
 .quote {
-  background: hsl(0, 0%, 80%);
+  background: var(--quote-color);
   border-radius: var(--border-radius);
   padding: 1rem;
 }
