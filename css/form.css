@@ -29,7 +29,7 @@ html {
 
 @media screen and (max-width: 980px) {
   :root {
-    --button-scale: 1.45;
+    --button-scale: 1.35;
   }
 
   html {
@@ -39,7 +39,7 @@ html {
 
 @media screen and (max-width: 480px) {
   :root {
-    --button-scale: 1.4;
+    --button-scale: 1.2;
   }
 
   html {
@@ -125,8 +125,8 @@ textarea {
   height: 10rem;
 }
 
-div > label,
-div > p {
+div > p,
+div > label {
   margin-bottom: 1rem;
 }
 
@@ -148,5 +148,5 @@ button {
 input[type='radio'],
 input[type='checkbox'] {
   transform: scale(var(--button-scale));
-  margin: 5px 5px;
+  margin: 0.5rem;
 }
