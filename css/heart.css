@@ -94,8 +94,8 @@ body::before {
   right: 0;
   bottom: 0;
   margin: auto;
-  width: 10rem;
-  height: 10rem;
+  width: 8rem;
+  height: 8rem;
   background: var(--heart-color);
   transform: rotate(-45deg);
 }
@@ -109,20 +109,20 @@ body::before {
 .heart::before {
   content: '';
   position: absolute;
-  background: var(--heart-color);  
-  width: 10rem;
-  height: 10rem;
-  bottom: 5rem;
+  background: var(--heart-color);
+  width: 8rem;
+  height: 8rem;
+  bottom: 4rem;
   border-radius: 50%;
 }
 
 .heart::after {
   content: '';
   position: absolute;
-  background: var(--heart-color);  
-  width: 10rem;
-  height: 10rem;
-  left: 5rem;
+  background: var(--heart-color);
+  width: 8rem;
+  height: 8rem;
+  left: 4rem;
   border-radius: 50%;
 }
 
@@ -130,6 +130,6 @@ body::before {
   color: coral;
   font-size: 2rem;
   margin-top: auto;
-  align-self: flex-start;
+  align-self: flex-end;
   padding: 1rem;
 }

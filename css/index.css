@@ -1,32 +1,12 @@
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: normal;
-  src: url('../fonts/poppins-v15-latin-regular.eot');
-  src: url('../fonts/poppins-v15-latin-regular.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/poppins-v15-latin-regular.woff2') format('woff2'),
-       url('../fonts/poppins-v15-latin-regular.woff') format('woff'),
-       url('../fonts/poppins-v15-latin-regular.ttf') format('truetype'),
-       url('../fonts/poppins-v15-latin-regular.svg#Poppins') format('svg');
-}
-
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: normal;
-  src: url('../fonts/raleway-v22-latin-regular.eot');
-  src: url('../fonts/raleway-v22-latin-regular.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/raleway-v22-latin-regular.woff2') format('woff2'),
-       url('../fonts/raleway-v22-latin-regular.woff') format('woff'),
-       url('../fonts/raleway-v22-latin-regular.ttf') format('truetype'),
-       url('../fonts/raleway-v22-latin-regular.svg#Poppins') format('svg');
-}
-
 :root {
   --main-white: #f0f0f0;
   --main-red: #be3144;
   --main-blue: #45567d;
   --main-gray: #303841;
+  --font-size: 10px;
+  --main-font: Poppins, sans-serif;
+  --heading-font: Raleway, sans-serif;
+  --border-radius: 4px;
 }
 
 *,
@@ -38,7 +18,7 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: var(--font-size);
   scroll-behavior: smooth;
 }
 
@@ -61,16 +41,17 @@ html {
 }
 
 body {
-  font-family: Poppins, sans-serif;
+  font-family: var(--main-font);
   font-size: 1.8rem;
+  font-weight: 400;
   line-height: 1.4;
   color: var(--main-white);
 }
 
 h1,
 h2 {
-  font-family: Raleway, sans-serif;
-  font-weight: bold;
+  font-family: var(--heading-font);
+  font-weight: 700;
   text-align: center;
 }
 
@@ -94,7 +75,6 @@ nav {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   padding: 1rem;
 }
-
 
 nav ul {
   display: flex;
@@ -125,7 +105,7 @@ nav ul {
 
 .nav-link:hover {
   background: var(--main-blue);
-  border-radius: 4px;
+  border-radius: var(--border-radius);
   color: white;
 }
 
@@ -140,7 +120,7 @@ nav ul {
 }
 
 #about h1 {
-  font-family: Raleway;
+  font-family: var(--main-font);
   font-size: 6rem;
   font-weight: bold;
 }
@@ -153,7 +133,7 @@ nav ul {
 
 #about p {
   font-size: 3rem;
-  font-weight: normal;
+  font-weight: 200;
   font-style: italic;
   color: var(--main-red);
 }
@@ -200,7 +180,7 @@ nav ul {
 .project-tile {
   background: var(--main-gray);
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-  border-radius: 4px;
+  border-radius: var(--border-radius);
   height: 40rem;
 }
 
@@ -233,7 +213,7 @@ nav ul {
 
 .btn-show-all {
   font-size: 2rem;
-  border-radius: 4px;
+  border-radius: var(--border-radius);
   background: var(--main-gray);
   transition: background 0.3s ease-out;
 }
@@ -264,7 +244,8 @@ nav ul {
 
 .contact-header h2 {
   font-size: 5rem;
-  font-family: Raleway;
+  font-family: var(--heading-font);
+  font-weight: bold;
 }
 
 .contact-header p {
