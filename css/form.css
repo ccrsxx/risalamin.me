@@ -7,8 +7,6 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 html {
@@ -49,6 +47,7 @@ html {
 
 body {
   font-size: 1.6rem;
+  margin: 0;
   background: linear-gradient(
       115deg,
       rgba(113, 113, 191, 0.6),
