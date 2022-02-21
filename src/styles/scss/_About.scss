@@ -7,13 +7,21 @@
   background: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
 
   h1 {
-    margin-top: 5rem;
     font-size: 6rem;
+    margin-top: 5rem;
     font-weight: bold;
+
+    @media screen and (max-width: 48rem) {
+      font-size: 5rem;
+    }
   }
 
   h2 {
     font: italic 3rem Poppins;
     color: var(--main-red);
+
+    @media screen and (max-width: 48rem) {
+      font-size: 2rem;
+    }
   }
 }

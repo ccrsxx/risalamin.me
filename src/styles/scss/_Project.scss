@@ -11,6 +11,11 @@
     text-decoration: underline;
     text-underline-position: under;
     margin-bottom: 4rem;
+    text-align: center;
+
+    @media screen and (max-width: 48rem) {
+      font-size: 3rem;
+    }
   }
 
   .project-wrapper {

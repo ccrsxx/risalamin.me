@@ -5,4 +5,8 @@ footer {
   background-color: var(--main-gray);
   border-top: solid 4px var(--main-red);
   padding: 2rem;
+
+  @media screen and (max-width: 48rem) {
+    justify-content: center;
+  }
 }
