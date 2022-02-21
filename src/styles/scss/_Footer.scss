@@ -1,0 +1,8 @@
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  background-color: var(--main-gray);
+  border-top: solid 4px var(--main-red);
+  padding: 2rem;
+}
