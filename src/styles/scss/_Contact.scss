@@ -1,0 +1,41 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background-color: var(--main-gray);
+
+  h2 {
+    font: bold 5rem Raleway, sans-serif;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-style: italic;
+    margin-bottom: 2rem;
+  }
+
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-shadow: 2px 2px 1px #1f1f1f;
+
+    .contact-details {
+      font-size: 2rem;
+      padding: 1rem 2rem;
+      transition: transform 300ms ease-out;
+
+      .contact-icon {
+        filter: drop-shadow(2px 2px 1px #1f1f1f);
+      }
+
+      &:hover {
+        transform: translateY(1rem);
+        color: white;
+      }
+    }
+  }
+}
