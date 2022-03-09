@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import { quote, markdown, calculator, clock, python } from '../assets';
+import { quote, markdown, calculator, clock, python, etch } from '../assets';
 
 const projects = [
   { title: 'Random Quote Machine', href: 'random-quote-machine', img: quote },
@@ -15,6 +15,11 @@ const projects = [
     title: 'Python Web Minigame',
     href: 'https://ccrsxx.herokuapp.com',
     img: python
+  },
+  {
+    title: 'Etch a Sketch',
+    href: 'https://ccrsxx.github.io/etch-a-sketch/',
+    img: etch
   }
 ];
 
