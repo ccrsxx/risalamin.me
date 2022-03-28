@@ -1,6 +1,6 @@
 {
-  "short_name": "ccrsxx's Portfolio",
-  "name": "ccrsxx's Portofolio",
+  "short_name": "Risal's Portofolio",
+  "name": "Risal's Portofolio",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,14 +8,14 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo32.png",
+      "src": "logo192.png",
       "type": "image/png",
-      "sizes": "32x32"
+      "sizes": "192x192"
     },
     {
-      "src": "logo96.png",
+      "src": "logo512.png",
       "type": "image/png",
-      "sizes": "96x96"
+      "sizes": "512x512"
     }
   ],
   "start_url": ".",
