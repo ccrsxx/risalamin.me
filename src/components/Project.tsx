@@ -1,27 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import { quote, markdown, calculator, clock, python, etch } from '../assets';
-
-const projects = [
-  { title: 'Random Quote Machine', href: 'random-quote-machine', img: quote },
-  { title: 'Markdown Previewer', href: 'markdown-previewer', img: markdown },
-  {
-    title: 'TypeScript Calculator',
-    href: 'typescript-calculator',
-    img: calculator
-  },
-  { title: '25 + 5 Clock', href: 'clock-timer-reminder', img: clock },
-  {
-    title: 'Python Web Minigame',
-    href: 'https://ccrsxx.herokuapp.com',
-    img: python
-  },
-  {
-    title: 'Etch a Sketch',
-    href: 'https://ccrsxx.github.io/etch-a-sketch/',
-    img: etch
-  }
-];
+import { projectsData as projects } from '../common';
 
 export function Project() {
   return (
