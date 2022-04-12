@@ -4,13 +4,18 @@ import { projectsData as projects } from '../common';
 
 export function Project() {
   return (
-    <section id='project' className='project'>
-      <h2>These are some of my projects:</h2>
-      <div className='project-wrapper'>
+    <section
+      id='project'
+      className='flex min-h-screen flex-col items-center gap-10 bg-main-blue px-5 py-28 text-center'
+    >
+      <h2 className='text-2xl text-main-white underline underline-offset-4'>
+        These are some of my projects:
+      </h2>
+      <div className='grid-cols- grid w-screen max-w-7xl grid-cols-auto-fit gap-5 children:rounded'>
         {projects.map(({ title, href, img }, key) => (
           <a
+            className='bg-main-gray'
             href={href}
-            className='project-card'
             target='_blank'
             rel='noopener noreferrer'
             key={key}
