@@ -1,2 +1,2 @@
-export * from './projectsData';
-export * from './contactsData';
+export * from './projects';
+export * from './contacts';

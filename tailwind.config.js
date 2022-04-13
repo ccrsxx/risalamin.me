@@ -1,6 +1,12 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: ['./src/**/*.{ts,tsx}'],
   theme: {
+    screens: {
+      xs: '350px',
+      ...defaultTheme.screens
+    },
     extend: {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
@@ -13,7 +19,11 @@ module.exports = {
         'main-gray': 'var(--main-gray)'
       },
       gridTemplateColumns: {
-        'auto-fit': 'repeat(auto-fit, minmax(320px, 1fr))'
+        'auto-fit': 'repeat(auto-fit, minmax(320px, 1fr))',
+        'auto-xs': 'repeat(auto-fit, minmax(250px, 1fr))'
+      },
+      gridAutoRows: {
+        400: '400px'
       }
     }
   },

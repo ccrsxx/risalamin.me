@@ -1,6 +1,6 @@
 import { quote, markdown, calculator, clock, python, etch } from '../assets';
 
-export const projectsData = [
+export const projects = [
   {
     title: 'Random Quote Machine',
     href: 'https://ccrsxx.github.io/random-quote-machine',

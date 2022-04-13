@@ -1,11 +1,11 @@
 export function NavBar() {
   return (
-    <nav className='fixed w-full bg-main-red p-3'>
+    <nav className='fixed w-full bg-main-red p-3 text-center'>
       <ul
-        className='flex justify-end text-xl
-                   children:mr-3 children:w-[100px] children:cursor-pointer children:rounded children:p-2
-                   children:text-center children:text-main-white children:transition children:duration-300 
-                   children:ease-in-out'
+        className='text-md flex justify-center gap-3 children:mr-0 children:w-full children:max-w-[80px] 
+                   children:cursor-pointer children:rounded children:p-2 children:text-main-white children:transition 
+                   children:duration-300 children:ease-in-out xs:text-xl xs:children:max-w-[100px] 
+                   sm:justify-end sm:gap-0 sm:children:mr-3'
       >
         <li className='hover:bg-main-blue'>
           <a href='#about'>About</a>
