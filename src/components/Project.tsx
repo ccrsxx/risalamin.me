@@ -10,10 +10,10 @@ export function Project() {
       <h2 className='text-xl font-bold underline underline-offset-4 sm:text-2xl'>
         These are some of my projects:
       </h2>
-      <div className='grid w-full max-w-7xl grid-cols-auto-xs gap-10 shadow xs:grid-cols-auto-fit'>
+      <div className='grid w-full max-w-7xl grid-cols-auto-xs gap-10 xs:grid-cols-auto-fit'>
         {projects.map(({ title, href, img }, key) => (
           <a
-            className='group rounded bg-main-gray'
+            className='group rounded bg-main-gray shadow-xl transition-shadow duration-300 ease-out hover:shadow-2xl'
             href={href}
             target='_blank'
             rel='noopener noreferrer'

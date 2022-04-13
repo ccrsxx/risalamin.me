@@ -1,6 +1,6 @@
 export function NavBar() {
   return (
-    <nav className='fixed w-full bg-main-red p-3'>
+    <nav className='fixed w-full bg-main-red p-3 [box-shadow:0_4px_4px_-2px_rgba(0,0,0,0.2)]'>
       <ul
         className='text-md flex justify-center gap-3 children:mr-0 children:w-full children:max-w-[80px] 
                    children:cursor-pointer children:rounded children:p-2 children:transition 
