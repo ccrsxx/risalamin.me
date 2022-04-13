@@ -5,9 +5,9 @@ export function Project() {
   return (
     <section
       id='project'
-      className='flex min-h-screen flex-col items-center justify-center gap-10 bg-main-blue px-5 py-24 text-center sm:py-28'
+      className='flex min-h-screen flex-col items-center justify-center gap-10 bg-main-blue px-5 py-24 sm:py-28'
     >
-      <h2 className='text-xl font-bold text-main-white underline underline-offset-4 sm:text-2xl'>
+      <h2 className='text-xl font-bold underline underline-offset-4 sm:text-2xl'>
         These are some of my projects:
       </h2>
       <div className='grid w-full max-w-7xl grid-cols-auto-xs gap-10 shadow xs:grid-cols-auto-fit'>
