@@ -4,7 +4,7 @@ export function Contact() {
   return (
     <section
       id='contact'
-      className='flex min-h-[90vh] flex-col items-center justify-center gap-10 bg-main-gray text-center'
+      className='flex min-h-[90vh] flex-col items-center justify-center gap-10 bg-main-gray'
     >
       <div className='grid gap-3'>
         <h2 className='font-raleway text-4xl sm:text-5xl'>
